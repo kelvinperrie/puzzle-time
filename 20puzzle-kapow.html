@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <style>
+      html {
+        font-family: Verdana, sans-serif;
+      }
+      .intro {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1em;
+      }
+      .beautiful-eye {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #000;
+      }
+      .eye-ball {
+        position: absolute;
+        background-color: #000;
+      }
+      #detective {
+        width: 620px;
+        position: relative;
+        margin: auto;
+      }
+      
+    </style>
+    <title>puzzle time</title>
+  </head>
+  <body>
+    <div class="intro">
+      <p>
+        when you're a detective you gots to keep your eyes open all the time
+      </p>
+      <div id="detective">
+        <img src="images/columbo.png" alt="columbo" />
+      </div>
+      <p>
+        <img src="images/colombo-clue.png" alt="missing clue" />
+      </p>
+    </div>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <!-- no clues in the js, trust me, but you can read through it if you really want -->
+    <script src="scripts/beautiful-eyes.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+          $('#detective').makeEye({ size: 30, position: { x: 314, y:170 }, eyeBallSize: 6 });
+          $('#detective').makeEye({ size: 30, position: { x: 248, y:170 }, eyeBallSize: 6 });
+
+      });
+
+  </script>
+  </body>
+</html>

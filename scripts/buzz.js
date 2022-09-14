@@ -3,11 +3,6 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
 
-  $(document).ready(function() {
-    $(".new-bee-trigger").click(function() {
-        controller.MakeNewBee();
-    });
-  });
 
 var beeCounter = 0;
 var noiseCounter = 0;
@@ -116,17 +111,6 @@ var BeeModel = function() {
         }
 
     };
-    // self.MoveLoop = function() {
-    //     self.MaybeChangeDirection();
-    //     self.Move();
-    //     setTimeout(self.MoveLoop, 100);
-    // };
-    // self.MoveLoop();
-    // self.NoiseLoop = function() {
-    //     self.MakeNoise();
-    //     setTimeout(self.NoiseLoop, 300);
-    // };
-    // setTimeout(self.NoiseLoop, 300);    // start making noise after a little pause
 
     self.Initialize = function() {
         beeCounter += 1;
