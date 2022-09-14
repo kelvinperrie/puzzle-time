@@ -11,7 +11,17 @@
         text-align: center;
         margin-top: 40px;
         font-size: 1em;
-        
+      }
+      .bee {
+        position: absolute;
+      }
+      .sound {
+        position: absolute;
+        font-size: .6em;
+      }
+
+      body {
+        overflow: hidden; /* so if the bees go off screen it doesn't scroll */
       }
       
     </style>
@@ -19,15 +29,11 @@
   </head>
   <body>
     <div class="intro">
-      <p>this is really just filler text.</p>
-      <p>
-        say, this is nothing to do with this puzzle,<br/>
-        but what noise do bees make?<br/>
-        You should remember that.<br/>
-        That could be an answer my friend.
-      </p>
+      bees ARE great. You are correct.
     </div>
+      
     <script src="scripts/jquery-3.3.1.min.js"></script>
-    <script src="scripts/12puzzle-solongfrasier.js"></script>
+    <!-- there are no clues in this js file, I promise, look elsewhere -->
+    <script src="scripts/buzz.js"></script>
   </body>
 </html>
