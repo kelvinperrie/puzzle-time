@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
+    <meta name="keywords" content="popping, pop, antipop, hop on pop, don't hop on pop, pop diversion"/>
     <style>
       html {
         font-family: Verdana, sans-serif;
@@ -11,14 +12,31 @@
         text-align: center;
         margin-top: 40px;
       }
+      .no-pop {
+        display: none;
+      }
+      .pop {
+        padding: 0;
+        margin: auto;
+        width: 200px;
+        text-align: center;
+        size: 0;
+      }
     </style>
-    <title>puzzle time</title>
+    <title>puzzle time</title><!-- if the title wasn't required by the html spec ... -->
   </head>
   <body>
-    <div class="intro">
-        Congrats, looking great.
+    <!-- do the pop -->
+    <div class="pop no-pop">
+      it's a nothing.
     </div>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-    <script src="scripts/03puzzle-yep.js"></script>
+    <!-- why not just use a p tag, this div obsession is going too far -->
+    <div class="intro">
+      <!-- no I'm serious, you're doing good -->
+      Congrats, looking great.
+      <!-- unless you cheated, but you do you -->
+    </div>
+    <!-- we don't even need jquery on this page, what a bandwidth waste -->
+    <script src="scripts/jquery.3.3.1.min.js"></script>
   </body>
 </html>

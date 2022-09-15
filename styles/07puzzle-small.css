@@ -1,0 +1,11 @@
+.spoiler {
+  background-color:black;
+}
+.spoiler:hover { 
+  background-color:white; 
+}
+
+/* everyone likes beige right. Why didn't we do this early. Very nice. */
+html {
+  background-color: beige;
+}

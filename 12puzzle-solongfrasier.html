@@ -5,21 +5,39 @@
     <style>
       html {
         font-family: Verdana, sans-serif;
+        background-color: moccasin;
       }
-      .intro {
+      .intro, .outro {
         width: 100%;
         text-align: center;
         margin-top: 40px;
         font-size: 1em;
         
       }
-      
+      /* sometimes I might put pointless styles on the page just to distract you */
+      .header, .chunk-o-text {
+        margin: auto;
+        width: 200px;
+        margin-top: 40px;
+      }
+      .chunk-o-text {
+        text-align: right;
+      }
     </style>
     <title>puzzle time</title>
   </head>
   <body>
-    <div class="intro">
-      <p>this is really just filler text.</p>
+    <div data-action="ignore" class="header">
+      <p>welcome.</p>
+    </div>
+    <div data-action="click" class="intro">
+      <p>this bit is really just filler text.</p>
+    </div>
+    <div data-action="ignore" class="chunk-o-text">
+      <p>you don't need to read this bit.</p>
+    </div>
+    <div data-action="record" class="outro">
+      <!-- sometimes I might put irrelevant stuff on the page just to distract you -->
       <p>
         say, this is nothing to do with this puzzle,<br/>
         but what noise do bees make?<br/>
@@ -28,6 +46,8 @@
       </p>
     </div>
     <script src="scripts/jquery-3.3.1.min.js"></script>
+    <!-- if you really want to you can try to figure out what the javascript is doing, but 
+    you don't need too, the clue is somewhere else. But I'm not your dad, you do what you want. -->
     <script src="scripts/12puzzle-solongfrasier.js"></script>
   </body>
 </html>
